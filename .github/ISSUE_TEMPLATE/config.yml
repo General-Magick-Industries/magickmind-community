@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Documentation
+      url: https://docs.magickmind.ai
+      about: Check our documentation first

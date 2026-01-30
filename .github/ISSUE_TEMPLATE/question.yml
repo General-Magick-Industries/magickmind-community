@@ -1,0 +1,40 @@
+name: Question
+description: Ask a question about usage or capabilities
+labels: ["question", "triage"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Have a question? We're here to help.
+
+    - type: input
+      id: company
+      attributes:
+          label: Company/Organization
+          placeholder: "Your company or organization"
+      validations:
+          required: true
+
+    - type: input
+      id: contact
+      attributes:
+          label: Contact Email
+          placeholder: "you@company.com"
+      validations:
+          required: true
+
+    - type: textarea
+      id: question
+      attributes:
+          label: Your question
+          placeholder: What would you like to know?
+      validations:
+          required: true
+
+    - type: textarea
+      id: context
+      attributes:
+          label: Context
+          placeholder: What are you trying to accomplish?
+      validations:
+          required: false

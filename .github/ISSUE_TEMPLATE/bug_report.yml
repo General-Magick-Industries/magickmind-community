@@ -1,0 +1,90 @@
+name: Bug Report
+description: Report a problem or unexpected behavior
+labels: ["bug", "triage"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for reporting this issue. Please fill out the details below.
+
+    - type: input
+      id: company
+      attributes:
+          label: Company/Organization
+          placeholder: "Your company or organization"
+      validations:
+          required: true
+
+    - type: input
+      id: contact
+      attributes:
+          label: Contact Email
+          placeholder: "you@company.com"
+      validations:
+          required: true
+
+    - type: dropdown
+      id: severity
+      attributes:
+          label: Severity
+          options:
+              - Critical (blocking production)
+              - High (major feature broken)
+              - Medium (feature partially working)
+              - Low (minor inconvenience)
+      validations:
+          required: true
+
+    - type: textarea
+      id: description
+      attributes:
+          label: What happened?
+          placeholder: Describe the issue clearly
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: Expected behavior
+          placeholder: What should have happened?
+      validations:
+          required: true
+
+    - type: textarea
+      id: reproduce
+      attributes:
+          label: Steps to reproduce
+          placeholder: |
+              1. Go to...
+              2. Click on...
+              3. See error
+      validations:
+          required: true
+
+    - type: input
+      id: request-id
+      attributes:
+          label: Request ID of the error (if applicable)
+          placeholder: "f50eadd347f24176fad603b6289b717a"
+      validations:
+          required: false
+
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment
+          placeholder: |
+              - Browser/OS:
+              - Account/Plan:
+              - API version (if applicable):
+      validations:
+          required: false
+
+    - type: textarea
+      id: screenshots
+      attributes:
+          label: Screenshots or logs
+          description: Drag and drop images or paste error logs
+      validations:
+          required: false
