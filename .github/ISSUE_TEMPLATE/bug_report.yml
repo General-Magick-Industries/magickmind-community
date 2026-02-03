@@ -15,14 +15,6 @@ body:
       validations:
           required: true
 
-    - type: input
-      id: contact
-      attributes:
-          label: Contact Email
-          placeholder: "you@company.com"
-      validations:
-          required: true
-
     - type: dropdown
       id: severity
       attributes:
@@ -49,7 +41,7 @@ body:
           label: Expected behavior
           placeholder: What should have happened?
       validations:
-          required: true
+          required: false
 
     - type: textarea
       id: reproduce
@@ -60,7 +52,7 @@ body:
               2. Click on...
               3. See error
       validations:
-          required: true
+          required: false
 
     - type: input
       id: request-id

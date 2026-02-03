@@ -15,14 +15,6 @@ body:
       validations:
           required: true
 
-    - type: input
-      id: contact
-      attributes:
-          label: Contact Email
-          placeholder: "you@company.com"
-      validations:
-          required: true
-
     - type: dropdown
       id: priority
       attributes:
@@ -49,7 +41,7 @@ body:
           label: Describe your ideal solution
           placeholder: How would you like this to work?
       validations:
-          required: true
+          required: false
 
     - type: textarea
       id: alternatives
